@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
       height: 3
     },
     shadowRadius: 5,
-    shadowOpacity: 1.0,
-    elevation: 3
+    shadowOpacity: 1.0,  
   },
   categoriesName: {
     flex: 1,
