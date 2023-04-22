@@ -25,13 +25,16 @@ function CategoriesScreen() {
   };
 
   const renderCategory = ({ item }) => (
-    <TouchableHighlight underlayColor="rgba(73,182,77,0.9)" onPress={() => onPressCategory(item)}>
+    <ScrollView>
+      <TouchableHighlight underlayColor="rgba(73,182,77,0.9)" onPress={() => onPressCategory(item)}>
       <View style={styles.categoriesItemContainer}>
         <Image style={styles.categoriesPhoto} source={{ uri: getCategoryUrl(item.categoryName) }} />
         <Text style={styles.categoriesName}>{item.ingredientName}</Text>        
         <Text style={styles.categoriesInfo}>{item.expirationDate}</Text>
       </View>
     </TouchableHighlight>
+    </ScrollView>
+    
   );
 
   return (
